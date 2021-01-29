@@ -21,5 +21,5 @@ func main() {
 
 	res.Body.Close()
 
-	//fmt.Printf("%s\n", data)
+	fmt.Printf("%s\n", data)
 }
