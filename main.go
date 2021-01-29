@@ -10,7 +10,8 @@ import (
 func main() {
 	fmt.Println("Hello world!")
 
-	res, err := http.Get("https://jsonplaceholder.typicode.com/users/1")
+	//TODO convert json response of api into golang object
+	res, err := http.Get("https://draft.premierleague.com/api/bootstrap-static")
 
 	if err != nil {
 		log.Fatal(err)
@@ -20,5 +21,5 @@ func main() {
 
 	res.Body.Close()
 
-	fmt.Printf("%s\n", data)
+	//fmt.Printf("%s\n", data)
 }
